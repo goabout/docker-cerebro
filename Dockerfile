@@ -13,4 +13,4 @@ RUN cd /opt/ \
 
 WORKDIR /opt/cerebro-${CEREBRO_VERSION}
 EXPOSE 9000
-CMD ["sh", "-c", "bin/cerebro -Dhosts.0.host=$ELASTICSEARCH_HOST"]
+CMD ["sh", "-c", "exec bin/cerebro -Dhosts.0.host=$ELASTICSEARCH_HOST"]
